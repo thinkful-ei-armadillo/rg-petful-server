@@ -30,7 +30,7 @@ app.use(
 );
 
 
-app.use(PetfulRouter);
+app.use('/', PetfulRouter);
 
 
 app.use(
