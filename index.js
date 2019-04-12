@@ -20,13 +20,16 @@ const db = knex({
 });
 
 app.set('db', db);
+
+app.use(helmet());
+
 app.use(
   cors({
     origin: CLIENT_ORIGIN
   })
 );
 
-app.use(helmet());
+
 app.use(PetfulRouter);
 
 
