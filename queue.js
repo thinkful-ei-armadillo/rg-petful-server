@@ -68,7 +68,7 @@ class Queue {
       result.push(current.value);
       current = current.next;
     }
-    result.push(current.value);
+    // result.push(current.value);
     return result;
   }
 }
