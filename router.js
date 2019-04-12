@@ -31,7 +31,7 @@ petRouter
           catQ.enqueue(cats[i]);
         }
         const cat = catQ.dequeue();
-        res.json(204).end();
+        res.send(204).end();
       })
       .catch(next);
   });
