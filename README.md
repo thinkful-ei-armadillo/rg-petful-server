@@ -1,5 +1,5 @@
 # Petful
-### By Robin and Geordie
+### By Robin Khiv and Geordie Connell
 
 ## Introduction
 
