@@ -6,7 +6,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const helmet = require('helmet');
 
-const PetfulRouter = require('./router');
+const PetfulRouter = require('./Routes/router');
 
 const { PORT, DB_URL, CLIENT_ORIGIN } = require('./config');
 // const { dbConnect } = require('./db-mongoose');
