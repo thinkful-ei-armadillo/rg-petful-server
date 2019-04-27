@@ -51,6 +51,7 @@ petRouter
         for (let i = 0; i < dogs.length; i++) {
           dogQ.enqueue(dogs[i]);
         }
+        console.log(dogQ.peak())
         res.json({
           first: dogQ.peak(),
           display: dogQ.display()
