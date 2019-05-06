@@ -7,8 +7,8 @@ const Queue = require('../Data Structure/queue');
 
 petRouter
   .route('/api/cat')
-  .get((req, res, next) => {
-    PetfulService.getCats(req.app.get('db'))
+  .get(async (req, res, next) => {
+    await PetfulService.getCats(req.app.get('db'))
       .then(cats => {
         const catQ = new Queue();
         for (let i = 0; i < cats.length; i++) {
@@ -24,9 +24,9 @@ petRouter
 
 petRouter
   .route('/api/cat/:catID')
-  .delete((req, res, next) => {
+  .delete(async (req, res, next) => {
     const catId = req.params.catID;
-    PetfulService.getCats(req.app.get('db'))
+    await PetfulService.getCats(req.app.get('db'))
       .then(cats => {
         const catQ = new Queue();
         for (let i = 0; i < cats.length; i++) {
@@ -44,8 +44,8 @@ petRouter
  
 petRouter
   .route('/api/dog')
-  .get((req, res, next) => {
-    PetfulService.getDogs(req.app.get('db'))
+  .get(async (req, res, next) => {
+    await PetfulService.getDogs(req.app.get('db'))
       .then(dogs => {
         const dogQ = new Queue();
         for (let i = 0; i < dogs.length; i++) {
@@ -62,9 +62,9 @@ petRouter
 
 petRouter
   .route('/api/dog/:dogId')
-  .delete((req, res, next) => {
+  .delete(async (req, res, next) => {
     const dogId = req.params.dogId;
-    PetfulService.getDogs(req.app.get('db'))
+    await PetfulService.getDogs(req.app.get('db'))
       .then(dogs => {
         const dogQ = new Queue();
         for (let i = 0; i < dogs.length; i++) {
