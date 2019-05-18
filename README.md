@@ -8,7 +8,7 @@ Whenever you're ready to give one of our dogs or cats a forever home, click the 
 
 ## Demo
 
-[placeholder for link to demo app]
+https://petful.geordieconnell.now.sh
 
 ## Stack Used
 

@@ -1,5 +1,5 @@
 -- psql -U postgres -d petful -f seeds/seed.petful.sql
--- psql -U yjtnsycvhgkyup -d dhjj8ro27g1l0 -f seeds/seed.petful.sql
+-- psql -h ec2-54-221-236-144.compute-1.amazonaws.com -U yjtnsycvhgkyup -d dhjj8ro27g1l0 -f seeds/seed.petful.sql
 
 TRUNCATE cats, dogs;
 
